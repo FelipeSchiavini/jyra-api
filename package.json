@@ -4,21 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsx my-progress.ts",
-    "allProgress": "tsx all-progress.ts",
-    "inQa": "tsx qa.ts",
-    "todo": "tsx todo.ts"
+    "start": "(cd src/logs && tsx my-progress.ts)",
+    "inQa": "(cd src/logs && tsx qa.ts)",
+    "todo": "(cd src/logs && tsx todo.ts)"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.4.0",
     "dotenv": "^16.3.1",
-    "jira.js": "^2.19.0",
-    "tsx": "^3.12.7",
-    "typescript": "^5.1.6"
+    "jira.js": "^2.19.0"
   },
   "devDependencies": {
-    "@types/node": "^20.3.2"
+    "@types/node": "^20.3.2",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
   }
 }
